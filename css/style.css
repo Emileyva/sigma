@@ -151,7 +151,12 @@ ul {
   width: 50px;
   height: 50px;
 }
-
+footer{
+  background-color: black;
+  color: white;
+  padding: 5px;
+  margin-top: auto;
+}
 
 @media screen and (max-width: 920px) {
   nav.active {
