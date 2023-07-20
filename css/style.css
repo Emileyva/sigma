@@ -5,15 +5,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Josefin Sans", sans-serif; */
 }
 body {
-  background: #ffffff;
+  background: #293450;
   min-height: 100vh;
   overflow-x: hidden;
   line-height: unset;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 h1 {
@@ -37,7 +37,6 @@ nav {
   justify-content: space-between;
   z-index: 100;
   transition: all 0.5s ease;
-  background-color: #bc590a;
 }
 
 nav.active {
@@ -56,15 +55,21 @@ nav.active {
 
 .navegasion a {
   text-decoration: none;
-  color: #1038ac;
   padding: 6px 15px;
   border-radius: 20px;
   margin: 0 10px;
   font-weight: 600;
+  transform: scaleX(0);
+  transform-origin: bottom center;
+  transition: 2s;
 }
+
+
 .navegasion a:hover {
-  background: #ff9505;
-  color: #1038ac;
+  transform: scaleX(1);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #81e9e0;
 }
 
 ul {
@@ -115,20 +120,61 @@ ul {
   height: 266px;
 }
 
+.textos {
+  color: white;
+  max-width: 280px;
+  background-color: #25d366;
+}
+.textos::first-letter {
+  font-size: 50px;
+  font-style: italic;
+}
+
+.introduccion {
+  margin-top: 150px;
+  display: flex;
+}
+
+.funcionalidades {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.funciones {
+  margin: 10px;
+  background-color: #25d366;
+  border-radius: 10px;
+  width: 140px;
+  height: 220px;
+  box-shadow: 5px 5px 10px #000;
+}
+
+.funciones:hover{
+  width: 150px;
+  height: 230px;
+}
+
+.imagenes{
+  max-width: 100%;
+  max-height:100% ;
+}
+
+
 .div-form {
   background-color: #c0cef7;
   border-radius: 10px;
-  width: 350px;
-  margin-top: 80px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 40px;
+  width: 640px;
+  box-shadow: 0 0 20px #fff;
 }
 .form-selectores *{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   border-radius: 10px; 
   border-width: 3px;
+  border-style: hidden;
+  background-color: inherit;
   padding: 5px;
   margin: 10px;
   width: 300px;
@@ -144,18 +190,94 @@ ul {
   width: 100px;
 }
 .form-selectores *:focus {
-  background-color: #81e9e0;
+  border-style: hidden;
+
   opacity: 0.5;
 }
 .bloque {
   width: 50px;
   height: 50px;
 }
+
+.beneficios {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #25d366;
+  border-radius: 10px;
+}
+
+.tarjeta{
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 10px;
+}
+
+.tarjeta .cara{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.tarjeta .frente{
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0px 5px 10px #000;
+}
+
+.tarjeta .frente img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tarjeta .frente h3{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  background-color: #1038ac;
+  text-align: center;
+}
+
+.tarjeta .atras{
+  transform: perspective(600px) rotateY(180deg);
+  background-color: #1038ac;
+  padding: 15px;
+  color: #25d366;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.tarjeta .atras h3{
+  font-size: 30px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+.tarjeta .atras p{
+  letter-spacing: 1px;
+}
+
+.tarjeta:hover .frente{
+  transform: perspective(600px) rotateY(180deg);
+}
+.tarjeta:hover .atras{
+  transform: perspective(600px) rotateY(360deg);
+}
+
 footer{
   background-color: black;
   color: white;
   padding: 5px;
   margin-top: auto;
+  width: 100%;
 }
 
 @media screen and (max-width: 920px) {
