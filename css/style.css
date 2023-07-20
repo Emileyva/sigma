@@ -143,9 +143,10 @@ ul {
 .funciones {
   margin: 10px;
   background-color: #25d366;
+  padding: 10px;
   border-radius: 10px;
   width: 140px;
-  height: 220px;
+  height: 300px;
   box-shadow: 5px 5px 10px #000;
 }
 
@@ -179,19 +180,9 @@ ul {
   margin: 10px;
   width: 300px;
 }
-.form-selectores input:valid {
-  border-color: rgb(91, 156, 91);
-}
 
-.form-selectores input[type="submit"]{
-  color: #1038ac;
-  border-color: grey;
-  margin-left: 100px;
-  width: 100px;
-}
 .form-selectores *:focus {
   border-style: hidden;
-
   opacity: 0.5;
 }
 .bloque {
@@ -200,10 +191,12 @@ ul {
 }
 
 .beneficios {
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   background-color: #25d366;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .tarjeta{
