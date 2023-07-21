@@ -393,3 +393,124 @@ footer {
     line-height: 66px;
   }
 }
+
+/*####FORMULARIO##### */
+.contacto {
+  display: grid;
+  place-items: center;
+  margin-top: 3%;
+}
+.contacto p {
+  color: #00393b;
+  margin: 0%;
+}
+
+.contact-from {
+  background-color: #fff;
+  padding: 48px 40px;
+  box-shadow: 2px 0px 3px 0px rgba(158, 157, 157, 0.75);
+  margin-bottom: 15px;
+}
+.contact-from h5 {
+  color: #00393b;
+  position: relative;
+  padding-bottom: 12px;
+}
+.contact-from h5::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  background-color: #e07c09;
+  bottom: 0;
+  left: 0;
+}
+.contact-from h2 {
+  font-size: 36px;
+  color: #00393b;
+  padding-top: 10px;
+}
+.contact-from .singel-form {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contact-from .singel-form input {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  border: 1px solid #a1a1a1;
+  border-radius: 5px;
+  color: #8a8a8a;
+  font-size: 15px;
+}
+.contact-from .singel-form textarea {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  border: 1px solid #a1a1a1;
+  border-radius: 5px;
+  color: #8a8a8a;
+  font-size: 15px;
+  padding-top: 10px;
+  height: 100px;
+  resize: none;
+}
+
+.main-btn {
+  text-align: center;
+  border: 1px solid #e07c09;
+  padding: 10px 40px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #00393b;
+  position: relative;
+  transition: 0.4s ease-in-out;
+  background-color: #e07c09;
+  border-radius: 5px;
+}
+.main-btn:hover {
+  color: #e07c09;
+  border-color: #3a8481;
+  background-color: #3a8481;
+}
+
+.contact-address {
+  background-color: #3a8481;
+  padding: 23px 0;
+  margin-bottom: 3%;
+}
+.contact-address ul li {
+  padding-top: 30px;
+  list-style: none;
+}
+.contact-address ul li .singel-address {
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.contact-address ul li .singel-address .icon {
+  border-radius: 50%;
+  border: 1px solid #d83030;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  background: #d83030;
+}
+.contact-address ul li .singel-address .icon i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+.contact-address ul li .singel-address .cont {
+  padding-left: 20px;
+}
+.contact-address ul li .singel-address .cont p {
+  color: #00393b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0px;
+  margin-right: 15px;
+}
+
