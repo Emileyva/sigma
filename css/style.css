@@ -229,15 +229,6 @@ ul {
   outline: 0;
   color: #fff;
   border-bottom: 1px solid #d63031;
-  /*   display: flex;
-  flex-wrap: wrap;
-  border-radius: 10px;
-  border-width: 3px;
-  border-style: hidden;
-  background-color: inherit;
-  padding: 5px;
-  margin: 10px;
-  width: 300px; */
 }
 
 .form-selectores *:focus {
