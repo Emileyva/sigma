@@ -427,12 +427,12 @@ footer {
 }
 .contact-from .singel-form input {
   width: 100%;
-  height: 50px;
-  padding: 0 20px;
-  border: 1px solid #a1a1a1;
-  border-radius: 5px;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
   color: #8a8a8a;
-  font-size: 15px;
+  border-bottom: 1px solid #ff9505;
 }
 .contact-from .singel-form textarea {
   width: 100%;
