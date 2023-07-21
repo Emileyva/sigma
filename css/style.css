@@ -55,22 +55,40 @@ nav.active {
 
 .navegasion a {
   text-decoration: none;
-  padding: 6px 15px;
+  color: #1038AC;
+  padding: 2px 0px;
   border-radius: 20px;
-  margin: 0 10px;
+  margin: 0 25px;
   font-weight: 600;
-  transform: scaleX(0);
-  transform-origin: bottom center;
-  transition: 2s;
+  position: relative;
 }
 
 
-.navegasion a:hover {
+/* .navegasion a:hover {
   transform: scaleX(1);
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-decoration-color: #81e9e0;
-}
+} */
+.navegasion a:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: dodgerblue;
+  /*animacion de derecha a izquierda*/
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+  }
+.navegasion a:hover:after {
+  transform: scaleX(1);
+  }
+
+
 
 ul {
   margin-bottom: 0px;
