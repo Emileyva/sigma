@@ -8,6 +8,7 @@
 }
 body {
   background: #293450;
+  background-image: url(../media/fondo.jpeg);
   min-height: 100vh;
   overflow-x: hidden;
   line-height: unset;
@@ -25,6 +26,7 @@ h2 {
   font-weight: bold;
   margin: 0;
   font-size: 1.5em;
+  font-size: 70px;
 }
 
 nav {
@@ -119,11 +121,18 @@ ul {
 .dropdown.open {
   height: 266px;
 }
-
+.intro{
+  display: flex;
+  
+}
 .textos {
+  display: flex;
   color: white;
   max-width: 280px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
 }
+
 .textos::first-letter {
   font-size: 50px;
   font-style: italic;
@@ -135,18 +144,18 @@ ul {
 }
 
 .introduccion img{
-  width: 300px;
+  width: 700px;
   height: auto;
 }
 
 .funcionalidades {
+  margin-top: 400px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .funciones {
   margin: 10px;
-  background-color: #25d366;
   padding: 10px;
   border-radius: 10px;
   width: 140px;
