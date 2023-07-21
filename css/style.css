@@ -151,8 +151,7 @@ ul {
 }
 
 .funciones:hover{
-  width: 150px;
-  height: 230px;
+  transform: scale(1.01);
 }
 
 .imagenes{
@@ -193,8 +192,9 @@ ul {
 .beneficios {
   margin-top: 30px;
   display: flex;
+  width: 1000px;
   flex-wrap: wrap;
-  background-color: #25d366;
+  background-color: #1e4877;
   border-radius: 10px;
   padding: 10px;
 }
