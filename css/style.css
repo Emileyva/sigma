@@ -123,7 +123,6 @@ ul {
 .textos {
   color: white;
   max-width: 280px;
-  background-color: #25d366;
 }
 .textos::first-letter {
   font-size: 50px;
@@ -133,6 +132,11 @@ ul {
 .introduccion {
   margin-top: 150px;
   display: flex;
+}
+
+.introduccion img{
+  width: 300px;
+  height: auto;
 }
 
 .funcionalidades {
