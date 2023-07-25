@@ -42,21 +42,21 @@
             <a href="#intro" class="logo"
               ><img class="logo" src="media/Recurso 13LOGO.png" alt="LOGO"
             /></a>
-            <ul class="navegasion">
-              <a href="#introduccion">Nosotros</a>
+            <ul class="navegacion">
+              <a href="#venta-simple">Nosotros</a>
               <a href="#">Funcionalidades</a>
-              <a href="#">Clientes</a>
-              <a href="#">Planes</a>
-              <a href="#form-contacto">Contacto</a>
+              <a href="#clientes">Clientes</a>
+              <a href="#planes">Planes</a>
+              <a href="#formulario">Contacto</a>
             </ul>
             <div class="toggle">
               <i class="fa-solid fa-bars"></i>
             </div>
             <div class="dropdown">
-              <li><a href="#">Nosotros</a></li>
+              <li><a href="#intro">Nosotros</a></li>
               <li><a href="#funcionalidades">Funcionalidades</a></li>
-              <li><a href="#">Clientes</a></li>
-              <li><a href="#">Planes</a></li>
+              <li><a href="#clientes">Clientes</a></li>
+              <li><a href="#planes">Planes</a></li>
               <li><a href="#intro">Contacto</a></li>
             </div>
           </nav>
@@ -78,7 +78,7 @@
     </div>
     <!--INICIO ELEMENTOS-->
     <div class="contenedor">
-      <h3>¿Qué es Venta Simple?</h3>
+      <h3 id="venta-simple">¿Qué es Venta Simple?</h3>
       <section class="venta-simple">
         <div class="venta-simple-contenedor">
           <div>
@@ -155,7 +155,11 @@
                 alt="ALTERNATIVO"
                 class="imagen-principal"
               />
-              <img src="media/venta-simple/Personalizacion color.png" alt="ALTERNATIVO2" class="imagen-alternativa">
+              <img
+                src="media/venta-simple/Personalizacion color.png"
+                alt="ALTERNATIVO2"
+                class="imagen-alternativa"
+              />
             </div>
             <h4>PERSONALIZACIÓN</h4>
             <p class="textos-venta">
@@ -165,39 +169,8 @@
           </div>
         </div>
       </section>
-      <!--PLANES-->
-      <section id="funcionalidades" class="funcionalidades">
-        <!-- ... (contenido de funcionalidades) ... -->
-        <div class="funciones">
-          <div class="hovereano">
-            <img
-              class="imagenes"
-              src="media/computadora.png"
-              alt="IMAGEN PRUEBA"
-            />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
-              dolores nisi alias dolorem obcaecati aliquid.
-            </p>
-          </div>
-        </div>
-        <div class="funciones">
-          <img class="imagenes" src="media/dinero.png" alt="IMAGEN PRUEBA" />
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
-            dolores nisi alias dolorem obcaecati aliquid.
-          </p>
-        </div>
-        <div class="funciones">
-          <img class="imagenes" src="media/base.png" alt="IMAGEN PRUEBA" />
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
-            dolores nisi alias dolorem obcaecati aliquid.
-          </p>
-        </div>
-      </section>
       <!--TARJETAS-->
-      <section class="beneficios">
+      <section class="beneficios" id="clientes">
         <!-- ... (contenido de beneficios) ... -->
         <div class="tarjeta">
           <div class="cara frente">
@@ -284,9 +257,38 @@
           </div>
         </div>
       </section>
+      <!--PLANES-->
+      <h3 id="planes">NUESTROS PLANES</h3>
+      <section  class="planes">
+        <!-- ... (contenido de funcionalidades) ... -->
+        <div class="plan">
+          <h4>PLAN INICIAL</h4>
+          <p class="precio">100000</p>
+          <p><i class="far fa-circle-check"></i> INFORMACION</p>
+          <p><i class="far fa-circle-check"></i> INFORMACION</p>
+          <p><i class="far fa-circle-check"></i> INFORMACION</p>
+          <a href="#formulario"><button>CONTACTENOS</button></a>
+        </div>
+        <div class="plan">
+          <h4>PLAN REPORTING</h4>
+          <p class="precio">150000</p>
+          <p><i class="far fa-circle-check"></i> INFORMACION</p>
+          <p><i class="far fa-circle-check"></i> INFORMACION</p>
+          <p><i class="far fa-circle-check"></i> INFORMACION</p>
+          <a href="#formulario"><button>CONTACTENOS</button></a>
+        </div>
+        <div class="plan">
+          <h4>PLAN PROFESIONAL</h4>
+          <p class="precio">200000</p>
+          <p><i class="far fa-circle-check"></i> INFORMACION</p>
+          <p><i class="far fa-circle-check"></i> INFORMACION</p>
+          <p><i class="far fa-circle-check"></i> INFORMACION</p>
+          <a href="#formulario"><button>CONTACTENOS</button></a>
+        </div>
+      </section>
     </div>
     <!-- FORMULARIO -->
-    <section class="contacto">
+    <section id="formulario" class="contacto">
       <div class="container">
         <div class="row">
           <div class=".">

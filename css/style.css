@@ -83,7 +83,7 @@ nav.active {
   transform: scale(1.1);
 }
 
-.navegasion a {
+.navegacion a {
   text-decoration: none;
   color: #1038ac;
   padding: 2px 0px;
@@ -94,7 +94,7 @@ nav.active {
   position: relative;
 }
 
-.navegasion a:after {
+.navegacion a:after {
   content: "";
   position: absolute;
   right: 0;
@@ -108,7 +108,7 @@ nav.active {
   transition: transform 0.2s ease-in-out;
 }
 
-.navegasion a:hover:after {
+.navegacion a:hover:after {
   transform: scaleX(1);
 }
 
@@ -202,10 +202,12 @@ ul {
 .venta-simple {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 30px;
 }
-.contenedor h3{
+.contenedor h3 {
   text-align: center;
   color: orange;
+  margin-bottom: 25px;
   width: 100%;
   font-size: 45px;
 }
@@ -219,17 +221,17 @@ ul {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin: 40px;
-  height: 50%;
 }
 
 .venta-simple-contenedor div {
+  height: 40%;
   align-items: center;
   display: flex;
   flex-direction: column;
   position: relative;
   border-radius: 10px;
   background-color: #4d648d;
+  margin: 20px;
 }
 
 .animacion {
@@ -237,25 +239,25 @@ ul {
   width: 40%;
 }
 
-.animacion img{
+.animacion img {
   height: auto;
-  width: 40%; 
+  width: 40%;
   opacity: 1;
   transition: opacity 0s, transform 0.5s ease;
 }
 
-.imagen-alternativa{
+.imagen-alternativa {
   position: absolute;
   display: none;
   opacity: 0;
   transition: opacity 0.5s ease, transform 1.5s ease;
 }
 
- .animacion:hover img {
+.animacion:hover img {
   opacity: 0;
 }
 
-.animacion:hover .imagen-alternativa{
+.animacion:hover .imagen-alternativa {
   display: inline;
   transform: scale(1.2);
   bottom: 15px;
@@ -267,20 +269,73 @@ ul {
   width: 80%;
 }
 
-.funcionalidades {
+.planes {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: auto;
+  width: 100%;
 }
 
-.funciones {
-  background-color: #1e4877;
-  margin: 20px;
+.planes h3 {
+  text-align: center;
+  color: orange;
+
+  width: 100%;
+  font-size: 45px;
+  height: auto;
+}
+
+.plan {
+  margin: 10px;
   padding: 10px;
   border-radius: 10px;
-  width: 280px;
-  height: 400px;
+  width: 25%;
+  height: 50vh;
   box-shadow: 5px 5px 10px #000;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+  background-color: #4d648d;
+  position: relative; /* Asegura que el botón esté posicionado dentro del contenedor */
+}
+
+.plan p {
+  color: white;
+  margin: 10px;
+  font-size: 30px;
+  margin-left: 25px; /* Espacio entre el ícono y el texto */
+}
+
+.precio {
+  color: #128c7e !important;
+  font-size: 40px !important;
+}
+
+.plan i {
+  display: inline-block; /* Muestra el ícono en la misma línea que el texto */
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+.plan:hover {
+  transform: scale(1.1);
+  background-color: rgb(127, 193, 202); /* Fondo semi-transparente */
+}
+
+.plan button {
+  border-radius: 10px;
+  color: orange;
+  background-color: #1038ac;
+  padding: 5px;
+  position: absolute;
+  bottom: 15px;
+  left: 50%; /* Centrar horizontalmente */
+  transform: translateX(-50%); /* Ajustar al centro horizontal */
+}
+
+.plan h4 {
+  color: #128c7e;
 }
 
 .imagenes {
@@ -296,7 +351,8 @@ ul {
 .beneficios {
   margin-top: 30px;
   display: flex;
-  width: 1000px;
+  justify-content: space-evenly;
+  width: 100%;
   flex-wrap: wrap;
   background-color: #1e4877;
   border-radius: 10px;
@@ -372,7 +428,6 @@ ul {
   transform: perspective(600px) rotateY(360deg);
 }
 
-
 /*####FORMULARIO##### */
 .contacto {
   display: grid;
@@ -385,7 +440,7 @@ ul {
 }
 
 .contact-from {
-  background-color: #fff;
+  background-color: #ffae00;
   border-radius: 10px;
   padding: 48px 40px;
   box-shadow: 2px 0px 3px 0px rgba(158, 157, 157, 0.75);
@@ -494,7 +549,6 @@ ul {
   margin-right: 15px;
 }
 
-
 .btn-wsp {
   position: fixed;
   bottom: 20px;
@@ -522,7 +576,6 @@ footer {
   font-size: 20px;
 }
 
-
 @media screen and (max-width: 920px) {
   nav.active {
     background: #c0cef7;
@@ -541,7 +594,7 @@ footer {
     transition: all 0.5s ease;
     padding-left: none;
   }
-  .navegasion a {
+  .navegacion a {
     display: none;
   }
   .toggle {
