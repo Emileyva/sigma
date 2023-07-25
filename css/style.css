@@ -1,4 +1,5 @@
-@import "";
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 
 * {
   scroll-behavior: smooth;
@@ -19,6 +20,7 @@ body {
   flex-direction: column;
   margin: 0;
   overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main-section {
@@ -576,40 +578,75 @@ footer {
   color: #fff;
   font-size: 20px;
 }
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .introduccion {
+    margin-top: 150px;
+    margin-left: 20px;
+  }
 
-@media screen and (max-width: 920px) {
-  nav.active {
-    background: #c0cef7;
-    opacity: 100%;
-    padding: 30px 50px;
+  .plan {
+    width: 90%;
   }
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
+
+  .venta-simple {
+    flex-direction: column;
+  }
+
+  .venta-simple-centro,
+  .venta-simple-contenedor div {
     width: 100%;
-    padding: 30px 50px;
-    display: flex;
-    flex-wrap: wrap;
-    z-index: 100;
-    transition: all 0.5s ease;
-    padding-left: none;
   }
-  .navegacion a {
+
+  .contacto {
+    margin-top: 5%;
+  }
+
+  .navegacion {
     display: none;
   }
+
   .toggle {
     display: block;
   }
+
   .dropdown {
-    display: block;
+    right: 1rem;
+  }
+
+  .dropdown.open {
+    height: 300px;
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-  .btn-wsp {
-    width: 63px;
-    height: 63px;
-    line-height: 66px;
+/* Estilos para pantallas muy pequeñas */
+@media screen and (max-width: 480px) {
+  .introduccion {
+    margin-top: 100px;
+    margin-left: 10px;
+  }
+
+  .plan {
+    width: 100%;
+  }
+
+  .navegacion {
+    display: none;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  .dropdown {
+    right: 1rem;
+  }
+
+  .dropdown.open {
+    height: 300px;
+  }
+
+  .textos-venta {
+    width: 100%;
   }
 }
