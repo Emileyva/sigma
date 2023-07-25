@@ -191,7 +191,7 @@ ul {
 
 .contenedor {
   background-color: #293450;
-  margin-top: 750px;
+  margin-top: 650px;
   padding: 20px;
   width: 100%;
   display: flex;
@@ -207,7 +207,8 @@ ul {
 .contenedor h3 {
   text-align: center;
   color: orange;
-  margin-bottom: 25px;
+  margin-top: 75px;
+  margin-bottom: 40px;
   width: 100%;
   font-size: 45px;
 }
@@ -278,9 +279,9 @@ ul {
 }
 
 .planes h3 {
+
   text-align: center;
   color: orange;
-
   width: 100%;
   font-size: 45px;
   height: auto;
