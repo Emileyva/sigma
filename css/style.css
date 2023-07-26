@@ -1,12 +1,13 @@
-/* Estilos generales
+ /* Estilos generales */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
 
 * {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+
   box-sizing: border-box;
-} */
+}
 
 body,
 html {
@@ -17,8 +18,8 @@ body {
   background-color: #293450;
   line-height: unset;
   display: flex;
-  flex-direction: column;
-  margin: 0;
+
+  margin: 1px;
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
