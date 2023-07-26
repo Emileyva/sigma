@@ -57,11 +57,7 @@ body {
       height: 30vh;
   }
   .image-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    pointer-events: none;
+     height: auto;                                                              /*&%$&$%&$%&$%&$%&$%& */
   }
 }
 
@@ -686,7 +682,7 @@ footer {
   nav.active {
     background: #c0cef7;
     opacity: 100%;
-    padding: 30px 50px;
+    padding: 31px 25px;                                              /*gf ijsbjbfj bfgbjhbfsd */
   }
   nav {
     position: fixed;
@@ -709,12 +705,16 @@ footer {
   .dropdown {
     display: block;
   }
+  .logo{
+    width: auto;                                                                                 
+    height: 20px;                                                      /* ddkjofdkfdkdfkjfkjfsjdfjkjfkd */
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .btn-wsp {
-    width: 63px;
-    height: 63px;
+    width: 60px;
+    height: 60px;                                                             /* ddkjofdkfdkdfkjfkjfsjdfjkjfkd */
     line-height: 59px;
   }
 }
