@@ -334,6 +334,7 @@ ul {
   justify-content: space-evenly;
   height: auto;
   width: 100%;
+  flex-wrap: wrap
 }
 
 .planes h3 {
