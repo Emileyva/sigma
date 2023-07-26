@@ -57,7 +57,7 @@ body {
       height: 30vh;
   }
   .image-container img {
-     height: auto;                                                              /*&%$&$%&$%&$%&$%&$%& */
+     height: auto;                                                              
   }
 }
 
@@ -682,7 +682,7 @@ footer {
   nav.active {
     background: #c0cef7;
     opacity: 100%;
-    padding: 31px 25px;                                              /*gf ijsbjbfj bfgbjhbfsd */
+    padding: 31px 25px;                                              
   }
   nav {
     position: fixed;
@@ -707,14 +707,14 @@ footer {
   }
   .logo{
     width: auto;                                                                                 
-    height: 20px;                                                      /* ddkjofdkfdkdfkjfkjfsjdfjkjfkd */
+    height: 20px;                                                     
   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .btn-wsp {
     width: 60px;
-    height: 60px;                                                             /* ddkjofdkfdkdfkjfkjfsjdfjkjfkd */
+    height: 60px;                                                             
     line-height: 59px;
   }
 }
