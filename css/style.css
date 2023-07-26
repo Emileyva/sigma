@@ -55,9 +55,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 30vh;
+    padding: 126% 0% 40% 0%;
   }
   .image-container img {
     height: auto;
+    top: 13%;
   }
 }
 
@@ -253,6 +255,18 @@ h3 {
   margin: 20px;
 }
 
+@media screen and (max-width: 920px) {
+  .venta-simple-contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .venta-simple-contenedor div{
+    padding: 20px 20px; 
+  }
+}
+
 .animacion {
   position: relative;
   width: 40%;
@@ -263,6 +277,13 @@ h3 {
   width: 40%;
   opacity: 1;
   transition: opacity 0s, transform 0.5s ease;
+}
+
+@media screen and (max-width: 920px) {
+  .animacion img{
+    width: 30%;
+  }
+  
 }
 
 .imagen-alternativa {
@@ -756,6 +777,8 @@ footer {
     z-index: 100;
     transition: all 0.5s ease;
     padding-left: none;
+    background-color: #FF9505;
+
   }
   .navegacion a {
     display: none;
