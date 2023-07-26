@@ -33,47 +33,47 @@
     <!--PAGINA PRINCIPAL-->
     <div class="main-section">
       <div class="content-container">
-      <header id="intro">
+        <header id="intro">
           <!-- ... (contenido del menú) ... -->
-        <nav>
-          <a href="#intro" class="logo"
-            ><img class="logo" src="media/Recurso 13LOGO.png" alt="LOGO"
-          /></a>
+          <nav>
+            <a href="#intro" class="logo"
+              ><img class="logo" src="media/Recurso 13LOGO.png" alt="LOGO"
+            /></a>
             <ul class="navegacion">
               <a href="#venta-simple">Nosotros</a>
               <a href="#slider">Funcionalidades</a>
               <a href="#clientes">Clientes</a>
               <a href="#planes">Planes</a>
               <a href="#formulario">Contacto</a>
-          </ul>
-          <div class="toggle">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-          <div class="dropdown">
+            </ul>
+            <div class="toggle">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropdown">
               <li><a href="#venta-simple">Nosotros</a></li>
               <li><a href="#slider">Funcionalidades</a></li>
               <li><a href="#clientes">Clientes</a></li>
               <li><a href="#planes">Planes</a></li>
               <li><a href="#formulario">Contacto</a></li>
-          </div>
-        </nav>
-      </header>
+            </div>
+          </nav>
+        </header>
         <div class="image-container">
-          <img src="media/fondo.jpeg">
-      <div class="introduccion">
+          <img src="media/fondo.jpeg" />
+          <div class="introduccion">
             <!-- ... (contenido de la introducción) ... -->
-        <h1>
-          SI LA VENTA ES SIMPLE <br />
-          EL EXITO ES ASEGURADO
-        </h1>
-        <p class="textos">
-          Con VentaSimple, simplifica tu día a día y llevá tu negocio al
-          siguiente nivel. Gestioná de manera inteligente y eficaz con una
-          herramienta que simplifica tus tareas, optimiza tus operaciones y te
-          impulsa hacia el éxito
-        </p>
-      </div>
-    </div>
+            <h1>
+              SI LA VENTA ES SIMPLE <br />
+              EL EXITO ES ASEGURADO
+            </h1>
+            <p class="textos">
+              Con VentaSimple, simplifica tu día a día y llevá tu negocio al
+              siguiente nivel. Gestioná de manera inteligente y eficaz con una
+              herramienta que simplifica tus tareas, optimiza tus operaciones y
+              te impulsa hacia el éxito
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <!--INICIO ELEMENTOS-->
@@ -83,11 +83,11 @@
         <div class="venta-simple-contenedor">
           <div>
             <div class="animacion">
-            <img
+              <img
                 src="media/venta-simple/Store byn.png"
                 alt="ALTERNATIVO"
                 class="imagen-principal"
-            />
+              />
               <img
                 src="media/venta-simple/Store color.png"
                 alt="ALTERNATIVO2"
@@ -140,14 +140,14 @@
                 alt="ALTERNATIVO2"
                 class="imagen-alternativa"
               />
-        </div>
+            </div>
             <h4>GESTIÓN COMERCIAL</h4>
             <p class="textos-venta">
               Administra tu stock de forma eficiente, realiza seguimiento de
               compras a proveedores y efectúa cierres de caja sin
               complicaciones.
             </p>
-        </div>
+          </div>
           <div>
             <div class="animacion">
               <img
@@ -171,20 +171,38 @@
       </section>
       <!--SLIDER-->
       <section id="slider" class="funcionalidades">
-        <div class=""></div>
-        <input type="radio" name="position" checked />
-        <input type="radio" name="position" />
-        <input type="radio" name="position" />
-        <input type="radio" name="position" />
-        <input type="radio" name="position" />
-        <div class="carousel">
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
+        <div class="contenedor-slider">
+          <input type="radio" id="item-1" name="position" checked />
+          <input type="radio" id="item-2" name="position" />
+          <input type="radio" id="item-3" name="position" />
+          <input type="radio" id="item-4" name="position" />
+          <input type="radio" id="item-5" name="position" />
+          <div class="carousel">
+            <label class="item" for="item-1" id="selector-1">
+              <img src="media/pruebas/asa.jfif" alt="" />
+            </label>
+            <label class="item" for="item-2" id="selector-2">
+              <img src="media/pruebas/asd.jfif" alt="" />
+            </label>
+            <label class="item" for="item-3" id="selector-3">
+              <img src="media/pruebas/ds.jfif" alt="" />
+            </label>
+            <label class="item" for="item-4" id="selector-4">
+              <img src="media/pruebas/dsd.jfif" alt="" />
+            </label>
+            <label class="item" for="item-5" id="selector-5">
+              <img src="media/pruebas/dssda.jfif" alt="" />
+            </label>
+          </div>
+          <button class="flecha izquierda" onclick="mostrarImagenAnterior()">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="flecha derecha" onclick="mostrarImagenSiguiente()">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
       </section>
+
       <!--TARJETAS-->
       <h3>NUESTROS CLIENTES</h3>
       <section class="beneficios" id="clientes">
@@ -304,12 +322,12 @@
         </div>
       </section>
     </div>
-      <!-- FORMULARIO -->
+    <!-- FORMULARIO -->
     <section id="formulario" class="contacto">
-        <div class="container">
-          <div class="row">
-            <div class=".">
-             <div class="contact-from">
+      <div class="container">
+        <div class="row">
+          <div class=".">
+            <div class="contact-from">
               <h5>Contacto</h5>
               <form>
                 <div class="row">
@@ -318,60 +336,62 @@
                       <input type="text" placeholder="Nombre" />
                     </div>
                   </div>
-  
+
                   <div class="col-md-6">
                     <div class="singel-form">
                       <input type="text" placeholder="Apellido" />
                     </div>
                   </div>
-  
+
                   <div class="col-md-6">
                     <div class="singel-form">
                       <input type="mail" placeholder="Mail" />
                     </div>
                   </div>
-  
+
                   <div class="col-md-6">
-                  <div class="singel-form">
+                    <div class="singel-form">
                       <input type="number" placeholder="Telefono" />
                     </div>
                   </div>
-  
+
                   <div class="col-md-12">
                     <div class="singel-form">
                       <textarea name="consulta" placeholder="Consultas">
                       </textarea>
                     </div>
                   </div>
-  
+
                   <div class="col-md-12">
                     <div class="singel-form">
                       <button type="reset" class="main-btn">Enviar</button>
                     </div>
-                  </div>    
+                  </div>
                 </div>
-               </form>
-             </div>
-            </div>
+              </form>
             </div>
           </div>
-      </section>
+        </div>
+      </div>
+    </section>
 
     <!--BOTON WSP-->
-      <div>
-        <a
+    <div>
+      <a
         href="https://api.whatsapp.com/send?phone=5492215996263"
-          class="btn-wsp"
-          target="_blank"
-        >
-          <i class="fa fa-whatsapp icono"></i>
-        </a>
-      </div>
+        class="btn-wsp"
+        target="_blank"
+      >
+        <i class="fa fa-whatsapp icono"></i>
+      </a>
+    </div>
     <footer>
       <div>DETALLES</div>
     </footer>
+    <script src="script/mostrarAnt.js"></script>
+    <script src="script/mostrarSig.js"></script>
     <script src="script/girarTarjeta.js"></script>
-    <script src="script\menu.js"></script>
-    <script src="script\toggle.js"></script>
+    <script src="script/menu.js"></script>
+    <script src="script/toggle.js"></script>
   </body>
 </html>
