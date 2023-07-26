@@ -272,11 +272,11 @@ h3 {
   transition: opacity 0.5s ease, transform 1.5s ease;
 }
 
-.animacion:hover img {
+.venta-simple-contenedor div:hover img {
   opacity: 0;
 }
 
-.animacion:hover .imagen-alternativa {
+.venta-simple-contenedor div:hover .imagen-alternativa {
   display: inline;
   transform: scale(1.2);
   bottom: 15px;
