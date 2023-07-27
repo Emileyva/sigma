@@ -189,8 +189,7 @@ ul {
 }
 
 .introduccion {
-  margin-top: 50px;
-  margin-left: 750px;
+  margin-left: 650px;
   display: flex;
   flex-direction: column;
   font-size: 60px;
@@ -224,10 +223,11 @@ ul {
   justify-content: space-around;
   margin-bottom: 30px;
 }
-h3 {
+
+h2 {
   text-align: center;
   color: orange;
-  margin-top: 75px;
+  margin-top: 150px;
   margin-bottom: 40px;
   width: 100%;
   font-size: 45px;
@@ -349,14 +349,15 @@ input[type="radio"] {
   cursor: pointer;
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   visibility: hidden; /* Ocultar todos los elementos inicialmente */
+  border: 5px solid #4ac2e0; /* Agregamos el borde a cada imagen */
+  padding: 2px;
+  border-radius: 25px;
 }
 
 .funcionalidades img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
-  -o-object-fit: cover;
-  object-fit: cover;
+  border-radius: 25px;
 }
 
 #item-2:checked ~ .carousel #selector-1,
@@ -409,73 +410,45 @@ input[type="radio"] {
   right: 10px;
 }
 
+
 .planes {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   height: auto;
   width: 100%;
   flex-wrap: wrap;
 }
 
-.planes h3 {
-  text-align: center;
-  color: orange;
+.planes img{
   width: 100%;
-  font-size: 45px;
-  height: auto;
+  height: 100%;
+}
+
+.plan, .plan-activo {
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  width: 20%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 10px #000;
+  position: relative; 
 }
 
 .plan {
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  width: 25%;
-  height: 50vh;
-  box-shadow: 5px 5px 10px #000;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  transition: 0.5s;
-  background-color: #4d648d;
+  color: grey;
+  background-color: #ffffff;
   position: relative; /* Asegura que el botón esté posicionado dentro del contenedor */
 }
 
-.plan p {
+.plan-activo {
+  background: linear-gradient(135deg,rgba(163, 168,240,1)0%,rgba(105,111,221,1)100%);
   color: white;
-  margin: 10px;
-  font-size: 30px;
-  margin-left: 25px; /* Espacio entre el ícono y el texto */
-}
-
-.precio {
-  color: #128c7e !important;
-  font-size: 40px !important;
-}
-
-.plan i {
-  display: inline-block; /* Muestra el ícono en la misma línea que el texto */
-  margin-right: 5px; /* Espacio entre el ícono y el texto */
-}
-
-.plan:hover {
-  transform: scale(1.1);
-  background-color: rgb(127, 193, 202); /* Fondo semi-transparente */
-}
-
-.plan button {
-  border-radius: 10px;
-  color: orange;
-  background-color: #1038ac;
-  padding: 5px;
-  position: absolute;
-  bottom: 15px;
-  left: 50%; /* Centrar horizontalmente */
-  transform: translateX(-50%); /* Ajustar al centro horizontal */
-}
-
-.plan h4 {
-  color: #128c7e;
+  transform: scale(1.2);
+  z-index: 1;
 }
 
 .imagenes {
