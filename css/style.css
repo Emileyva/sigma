@@ -210,7 +210,6 @@ ul {
 
 .contenedor {
   background-color: #293450;
-  margin-top: 0;
   padding: 20px;
   width: 100%;
   display: flex;
@@ -227,7 +226,7 @@ ul {
 h2 {
   text-align: center;
   color: orange;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-bottom: 40px;
   width: 100%;
   font-size: 45px;
@@ -256,14 +255,14 @@ h2 {
 }
 
 @media screen and (max-width: 920px) {
-  .venta-simple-contenedor{
+  .venta-simple-contenedor {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-  .venta-simple-contenedor div{
-    padding: 20px 20px; 
+  .venta-simple-contenedor div {
+    padding: 20px 20px;
   }
 }
 
@@ -280,10 +279,9 @@ h2 {
 }
 
 @media screen and (max-width: 920px) {
-  .animacion img{
+  .animacion img {
     width: 30%;
   }
-  
 }
 
 .imagen-alternativa {
@@ -324,8 +322,8 @@ input[type="radio"] {
 }
 
 .contenedor-slider {
+  margin-top: 100px;
   width: 100%;
-  max-width: 10000px;
   height: 60vh;
   transform-style: preserve-3d;
   display: flex;
@@ -410,8 +408,8 @@ input[type="radio"] {
   right: 10px;
 }
 
-
 .planes {
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -420,12 +418,13 @@ input[type="radio"] {
   flex-wrap: wrap;
 }
 
-.planes img{
+.planes img {
   width: 100%;
   height: 100%;
 }
 
-.plan, .plan-activo {
+.plan,
+.plan-activo {
   padding: 10px;
   margin: 20px;
   border-radius: 10px;
@@ -435,7 +434,7 @@ input[type="radio"] {
   flex-direction: column;
   align-items: center;
   box-shadow: 5px 5px 10px #000;
-  position: relative; 
+  position: relative;
 }
 
 .plan {
@@ -445,15 +444,24 @@ input[type="radio"] {
 }
 
 .plan-activo {
-  background: linear-gradient(135deg,rgba(163, 168,240,1)0%,rgba(105,111,221,1)100%);
+  background: linear-gradient(
+    135deg,
+    rgba(163, 168, 240, 1) 0%,
+    rgba(105, 111, 221, 1) 100%
+  );
   color: white;
-  transform: scale(1.2);
+  transform: scale(1.25);
   z-index: 1;
 }
 
 .imagenes {
   max-width: 100%;
   max-height: 100%;
+}
+
+
+.cliente {
+  margin-top: 200px;
 }
 
 .bloque {
@@ -465,7 +473,7 @@ input[type="radio"] {
   margin-top: 30px;
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
+  width: 50%;
   flex-wrap: wrap;
   background-color: #1e4877;
   border-radius: 10px;
@@ -476,7 +484,7 @@ input[type="radio"] {
   position: relative;
   width: 300px;
   height: 350px;
-  margin: 10px;
+  margin: 11px;
 }
 
 .tarjeta .cara {
@@ -750,8 +758,7 @@ footer {
     z-index: 100;
     transition: all 0.5s ease;
     padding-left: none;
-    background-color: #FF9505;
-
+    background-color: #ff9505;
   }
   .navegacion a {
     display: none;
