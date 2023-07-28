@@ -299,6 +299,8 @@ ul {
   }
   .venta-simple-contenedor div {
     padding: 20px 20px;
+    width: 100%;
+    height: 45%;
   }
 }
 
@@ -755,9 +757,8 @@ footer div{
     flex-direction: column;
   }
 
-  .venta-simple-centro,
-  .venta-simple-contenedor div {
-    width: 100%;
+  .venta-simple-centro{
+    display: none;
   }
 
   .contacto {
