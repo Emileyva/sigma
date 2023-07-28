@@ -125,6 +125,25 @@ nav.active {
   transition: transform 0.2s ease-in-out;
 }
 
+.navegacion a.active {
+  /* Aquí agrega el estilo del subrayado con el color de la animación */
+  position: relative;
+}
+
+.navegacion a.active:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0; /* Ajusta esta distancia para colocar el subrayado donde desees */
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: dodgerblue;
+  transform-origin: center;
+  transform: scaleX(1);
+  transition: transform 0.2s ease-in-out;
+}
+
 .navegacion a:hover:after {
   transform: scaleX(1);
 }
@@ -222,7 +241,6 @@ h2 {
   margin-bottom: 40px;
   width: 100%;
   font-size: 45px;
-  scroll-margin-top: 150px;
   font-weight: bold;
 }
 
