@@ -70,12 +70,7 @@ h1 {
   font-size: 40px;
 }
 
-h2 {
-  font-weight: bold;
-  margin: 0;
-  font-size: 1.5em;
-  font-size: 60px;
-}
+
 
 nav {
   position: fixed;
@@ -227,7 +222,10 @@ h2 {
   margin-bottom: 40px;
   width: 100%;
   font-size: 45px;
+  scroll-margin-top: 150px;
+  font-weight: bold;
 }
+
 
 .venta-simple-centro {
   width: 48%;
