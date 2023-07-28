@@ -706,11 +706,16 @@ input[type="radio"] {
 footer {
   display: flex;
   justify-content: left;
+  flex-direction: row;
   align-items: center;
   background-color: #000;
-  height: 100px;
   color: #fff;
   font-size: 20px;
+}
+
+footer div{
+    width: 33%;
+    margin: 30px;
 }
 /* Estilos para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
