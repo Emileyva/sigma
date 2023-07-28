@@ -56,15 +56,15 @@ body {
     justify-content: center;
     align-items: center;
     height: 30vh;
-    padding: 106% 104% 20% 0%;
+    padding: 90% 50% 20% 0%;
   }
   .image-container img {
     height: auto;
-    top: 7%;
+    top: 9%;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
   .image-container {
     position: relative;
     display: flex;
@@ -315,6 +315,11 @@ ul {
 }
 
 @media screen and (max-width: 920px) {
+  .animacion img {
+    width: 10%;
+  }
+}
+@media screen and (max-width: 820px) {
   .animacion img {
     width: 30%;
   }
@@ -735,14 +740,10 @@ footer {
   font-size: 20px;
 }
 /* Estilos para pantallas más pequeñas */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   .introduccion {
     margin-top: 150px;
     margin-left: 20px;
-  }
-
-  .plan {
-    width: 90%;
   }
 
   .venta-simple {
@@ -766,9 +767,6 @@ footer {
     margin-left: 10px;
   }
 
-  .plan {
-    width: 100%;
-  }
   .textos-venta {
     width: 100%;
   }
@@ -815,4 +813,18 @@ footer {
     height: 60px;
     line-height: 59px;
   }
+}
+
+
+@media screen and (max-width: 820px) {
+  .plan{
+    width: 100%;
+    height: auto;
+  }
+  .plan-activo{
+    width: 73%;
+    height: 43vh;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  } 
 }
