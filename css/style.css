@@ -49,6 +49,21 @@ body {
   height: 100vh;
 }
 
+@media screen and (max-width: 920px) {
+  .image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    padding: 106% 104% 20% 0%;
+  }
+  .image-container img {
+    height: auto;
+    top: 7%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .image-container {
     position: relative;
@@ -64,13 +79,30 @@ body {
   }
 }
 
+
+
 h1 {
   color: rgb(74, 99, 245);
   font-weight: bold;
   font-size: 40px;
 }
 
+h2 {
+  text-align: center;
+  color: orange;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  width: 100%;
+  font-size: 45px;
+  scroll-margin-top: 150px;
+  font-weight: bold;
+}
 
+@media screen and (max-width: 920px) {
+  h2{
+    font-size: 40px;
+  }
+}
 
 nav {
   position: fixed;
@@ -234,16 +266,6 @@ ul {
   margin-bottom: 30px;
 }
 
-h2 {
-  text-align: center;
-  color: orange;
-  margin-top: 100px;
-  margin-bottom: 40px;
-  width: 100%;
-  font-size: 45px;
-  scroll-margin-top: 150px;
-  font-weight: bold;
-}
 
 
 .venta-simple-centro {
