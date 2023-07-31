@@ -90,8 +90,8 @@ h1 {
 h2 {
   text-align: center;
   color: orange;
-  margin-top: 100px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   width: 100%;
   font-size: 45px;
   scroll-margin-top: 150px;
@@ -261,15 +261,18 @@ ul {
 }
 
 .venta-simple {
-  display: flex;
-  justify-content: space-around;
   margin-bottom: 30px;
+  padding-bottom: 200px;
+  padding-top: 100px;
 }
 
-
+.venta-simple-objetos{
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .venta-simple-centro {
-  width: 48%;
+  width: 50%;
   height: auto;
 }
 
@@ -279,6 +282,11 @@ ul {
   width: 50%;
 }
 
+.venta-simple-elemento {
+  border: 3.5px solid #4d648d;
+  ;
+}
+
 .venta-simple-contenedor div {
   height: 40%;
   align-items: center;
@@ -286,8 +294,12 @@ ul {
   flex-direction: column;
   position: relative;
   border-radius: 10px;
-  background-color: #4d648d;
+  background-color: aliceblue;
   margin: 20px;
+}
+
+.venta-simple-objetos > div:not(.venta-simple-contenedor) {
+  border: none; /* o simplemente eliminar la propiedad 'border' */
 }
 
 @media screen and (max-width: 920px) {
@@ -346,18 +358,23 @@ ul {
 }
 .textos-venta {
   text-align: center;
-  color: white;
+  color: #293450;
+  font-weight: bold;
+  font-size: 16px;
   width: 80%;
 }
 
 .funcionalidades {
-  margin-top: 40px;
   width: 100%;
-  height: 500px;
+  padding: 30px 10px;
+  background-color: #4d648d;
+}
+
+.slider-objetos{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 10px;
+  height: 100%; /* Asegurarse de que ocupe todo el espacio disponible */
 }
 
 input[type="radio"] {
@@ -365,7 +382,6 @@ input[type="radio"] {
 }
 
 .contenedor-slider {
-  margin-top: 100px;
   width: 100%;
   height: 60vh;
   transform-style: preserve-3d;
@@ -452,14 +468,16 @@ input[type="radio"] {
 }
 
 .planes {
-  margin-top: 50px;
+  width: 100%;
+  z-index: 0;
+}
+
+.planes-objetos{
+  margin-top: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: auto;
-  width: 100%;
   flex-wrap: wrap;
-  z-index: 0;
 }
 
 .planes img {
@@ -473,7 +491,7 @@ input[type="radio"] {
   margin: 20px;
   border-radius: 10px;
   width: 20%;
-  height: 50vh;
+  min-height: 50vh; /* Cambiamos 'height' a 'min-height' para evitar superposición */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -502,24 +520,23 @@ input[type="radio"] {
   max-height: 100%;
 }
 
-.cliente {
-  margin-top: 200px;
-}
-
 .bloque {
   width: 50px;
   height: 50px;
 }
 
 .beneficios {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-evenly;
-  width: 70%;
-  flex-wrap: wrap;
-  background-color: #1e4877;
+  margin-top: 50px;
+  width: 100%; /* Ajustamos el ancho al 100% para ocupar todo el espacio disponible */
+  background-color:white;
   border-radius: 10px;
   padding: 10px;
+}
+
+.beneficios-objetos{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .tarjeta {
@@ -734,18 +751,36 @@ input[type="radio"] {
 
 footer {
   display: flex;
-  justify-content: left;
+  justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
   background-color: #000;
   color: #fff;
   font-size: 20px;
+  position: relative; /* Asegúrate de que el footer tenga position: relative */
 }
 
-footer div{
-    width: 33%;
-    margin: 30px;
+footer div {
+  width: 33%;
+  margin: 30px;
 }
+
+footer div:nth-child(2) {
+  position: relative; /* Asegúrate de que el div contenedor mantenga position: relative */
+  font-size: 15px;
+  color: #466cb3;
+  display: flex; /* Agrega display:flex para que los elementos dentro se alineen en el eje vertical */
+  flex-direction: column;
+  align-items: center; /* Centra el contenido verticalmente */
+}
+
+footer div:nth-child(2)::before {
+  content: ""; /* Crea un pseudo-elemento para mantener el espacio */
+  display: block;
+}
+
+
+
 /* Estilos para pantallas más pequeñas */
 @media screen and (max-width: 920px) {
   .introduccion {

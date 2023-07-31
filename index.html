@@ -77,11 +77,11 @@
       </div>
     </div>
     <!--INICIO ELEMENTOS-->
-    <div class="contenedor">
+    <section class="venta-simple">
       <h2 id="venta-simple">¿Qué es Venta Simple?</h2>
-      <section class="venta-simple">
+      <div class="venta-simple-objetos">
         <div class="venta-simple-contenedor">
-          <div>
+          <div class="venta-simple-elemento">
             <div class="animacion">
               <img
                 src="media/venta-simple/Store byn.png"
@@ -101,7 +101,7 @@
               de productos hasta descuentos y métodos de pago.
             </p>
           </div>
-          <div>
+          <div class="venta-simple-elemento">
             <div class="animacion">
               <img
                 src="media/venta-simple/Lector byn.png"
@@ -128,7 +128,7 @@
           class="venta-simple-centro"
         />
         <div class="venta-simple-contenedor">
-          <div>
+          <div class="venta-simple-elemento">
             <div class="animacion">
               <img
                 src="media/venta-simple/Gestion byn.png"
@@ -148,7 +148,7 @@
               complicaciones.
             </p>
           </div>
-          <div>
+          <div class="venta-simple-elemento">
             <div class="animacion">
               <img
                 src="media/venta-simple/Personaliacion byn.png"
@@ -168,10 +168,12 @@
             </p>
           </div>
         </div>
-      </section>
-      <!--SLIDER-->
+      </div>
+    </section>
+    <!--SLIDER-->
+    <section class="funcionalidades">
       <h2 id="slider">Funcionalidades</h2>
-      <section  class="funcionalidades">
+      <div class="slider-objetos">
         <div class="contenedor-slider">
           <input type="radio" id="item-1" name="position" checked />
           <input type="radio" id="item-2" name="position" />
@@ -202,12 +204,14 @@
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
-      </section>
-
-      <!--TARJETAS-->
+      </div>
+      S
+    </section>
+    <!--TARJETAS-->
+    <section class="beneficios">
       <h2 id="clientes" class="cliente">NUESTROS CLIENTES</h2>
-      <section class="beneficios" >
-        <!-- ... (contenido de beneficios) ... -->
+      <!-- ... (contenido de beneficios) ... -->
+      <div class="beneficios-objetos">
         <div class="tarjeta">
           <div class="cara frente">
             <img src="media/almacen.jpeg" alt="ALTERNATIVO" />
@@ -292,11 +296,13 @@
             </p>
           </div>
         </div>
-      </section>
-      <!--PLANES-->
+      </div>
+    </section>
+    <!--PLANES-->
+    <section class="planes">
       <h2 id="planes">NUESTROS PLANES</h2>
-      <section class="planes">
-        <!-- ... (contenido de funcionalidades) ... -->
+      <!-- ... (contenido de funcionalidades) ... -->
+      <div class="planes-objetos">
         <div class="plan">
           <img src="media/planes/plan-profesional.jpg" alt="PLAN PROFESIONAL" />
         </div>
@@ -306,11 +312,11 @@
         <div class="plan">
           <img src="media/planes/plan-reporting.jpg" alt="PLAN REPORTING" />
         </div>
-      </section>
-    </div>
-    <h2 id="formulario">Contactanos</h3>
+      </div>
+    </section>
     <!-- FORMULARIO -->
-    <section  class="contacto">
+    <section class="contacto">
+      <h2 id="formulario">Contactanos</h2>
       <div class="container">
         <div class="row">
           <div class=".">
@@ -344,7 +350,10 @@
 
                   <div class="col-md-12">
                     <div class="singel-form">
-                      <textarea name="consulta" placeholder="Consultas" ></textarea>
+                      <textarea
+                        name="consulta"
+                        placeholder="Consultas"
+                      ></textarea>
                     </div>
                   </div>
 
@@ -372,22 +381,43 @@
       </a>
     </div>
     <footer>
-      <div><img src="media/Recurso 13LOGO.png" alt="LOGO" class="imagenes"></div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ipsum deleniti incidunt, soluta consectetur voluptas vitae porro blanditiis suscipit fugiat, dolore harum? Laboriosam eos atque hic dolore omnis, officia ipsa!</div>
-      <div>  
+      <div>
+        <img src="media/Recurso 13LOGO.png" alt="LOGO" class="imagenes" />
+      </div>
+      <div>
+        Developed by<a
+          href="https://www.instagram.com/gregoponce/"
+          target="_blank"
+          >@gregoponce</a
+        >&<a href="https://www.instagram.com/emileyva_/" target="_blank"
+          >@emileyva</a
+        >
+      </div>
+      <div>
         <!-- Botón de YouTube -->
-        <a href="https://www.youtube.com" target="_blank" class="social-link">
+        <a
+          href="https://www.youtube.com/@SigmaSoluciones-bk7vv"
+          target="_blank"
+          class="social-link"
+        >
           <i class="fab fa-youtube"></i> YouTube
         </a>
         <!-- Botón de Facebook -->
-        <a href="https://www.facebook.com" target="_blank" class="social-link">
+        <a
+          href="https://www.facebook.com/sigmasolutionsar/"
+          target="_blank"
+          class="social-link"
+        >
           <i class="fab fa-facebook"></i> Facebook
-        </a> 
+        </a>
         <!-- Botón de Instagram -->
-        <a href="https://www.instagram.com" target="_blank" class="social-link">
+        <a
+          href="https://www.instagram.com/sigmasoluciones_/"
+          target="_blank"
+          class="social-link"
+        >
           <i class="fab fa-instagram"></i> Instagram
         </a>
-        
       </div>
     </footer>
     <script src="script/mostrarNav.js"></script>
