@@ -15,7 +15,7 @@ html {
 
 
 body {
-  background-color: #293450;
+  background-color: #081849;
   line-height: unset;
   display: flex;
   flex-direction: column;
@@ -248,7 +248,6 @@ ul {
 }
 
 .contenedor {
-  background-color: #293450;
   padding: 20px;
   width: 100%;
   display: flex;
@@ -260,6 +259,7 @@ ul {
   margin-bottom: 30px;
   padding-bottom: 200px;
   padding-top: 100px;
+  background-color: #081849;
 }
 
 .venta-simple-objetos{
@@ -363,7 +363,8 @@ ul {
 .funcionalidades {
   width: 100%;
   padding: 30px 10px;
-  background-color: #4d648d;
+  background-color: #31476E;
+  padding-bottom: 100px;  
 }
 
 .slider-objetos{
@@ -466,6 +467,9 @@ input[type="radio"] {
 .planes {
   width: 100%;
   z-index: 0;
+  background-color: #31476E;
+  padding-bottom: 150px;
+
 }
 
 .planes-objetos{
@@ -524,23 +528,32 @@ input[type="radio"] {
 .beneficios {
   margin-top: 50px;
   width: 100%; /* Ajustamos el ancho al 100% para ocupar todo el espacio disponible */
-  background-color:white;
+  background-color: #081849;  
   border-radius: 10px;
   padding: 10px;
+  margin-bottom: 100px; 
 }
 
-.beneficios-objetos{
-  flex-wrap: wrap;
+.conjunto-tarjeta {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
 }
+
+.beneficios-objetos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
 
 .tarjeta {
   position: relative;
-  width: 300px;
+  width: 390px; 
   height: 350px;
-  margin: 11px;
+  margin: 50px;
 }
+
 
 .tarjeta .cara {
   position: absolute;
