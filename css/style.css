@@ -128,10 +128,6 @@ nav.active {
   height: 45px;
 }
 
-.logo:hover {
-  transform: scale(1.1);
-}
-
 .navegacion a {
   text-decoration: none;
   color: #1038ac;
