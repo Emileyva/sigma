@@ -99,8 +99,11 @@ h2 {
 }
 
 @media screen and (max-width: 920px) {
+  h1{
+    font-size:32px;
+  }
   h2{
-    font-size: 40px;
+    font-size: 32px;
   }
 }
 
@@ -241,7 +244,11 @@ ul {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
 }
-
+@media screen and (max-width: 920px){
+  .textos{
+    font-size: 18px;
+  }
+}
 .textos::first-letter {
   font-size: 30px;
   font-style: italic;
@@ -307,14 +314,21 @@ ul {
   }
   .venta-simple-contenedor div {
     padding: 20px 20px;
-    width: 100%;
-    height: 45%;
+    width: 90%;
+    height: 35%;
+  }
+  .venta-simple-objetos{
+    flex-direction: column;
+    padding-bottom: 25px;
+  }
+  .venta-simple{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
 }
 
 .animacion {
   position: relative;
-  width: 40%;
 }
 
 .animacion img {
@@ -538,6 +552,13 @@ input[type="radio"] {
   display: flex;
   flex-direction: row;
 }
+@media screen and (max-width: 920px){
+  .conjunto-tarjeta{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 
 .beneficios-objetos {
   display: flex;
@@ -546,12 +567,27 @@ input[type="radio"] {
 
 }
 
+@media screen and (max-width: 920px){
+  .beneficios-objetos{
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+}
 
 .tarjeta {
   position: relative;
   width: 390px; 
   height: 350px;
   margin: 50px;
+}
+
+@media screen and (max-width: 920px){
+  .tarjeta{
+    width: 350px;
+    height: 310px; 
+    margin: 25px;
+  }
 }
 
 
@@ -856,7 +892,7 @@ footer div:nth-child(2)::before {
     height: 20px;
   }
   .beneficios{
-    width: 98%;
+    width: 100%;
 
   }
 }
