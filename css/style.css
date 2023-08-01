@@ -276,7 +276,8 @@ ul {
 
 .venta-simple-centro {
   width: 50%;
-  height: auto;
+  height: 50%;
+  margin-top: 5rem;
 }
 
 .venta-simple-contenedor {
@@ -291,7 +292,7 @@ ul {
 }
 
 .venta-simple-contenedor div {
-  height: 40%;
+  height: 45%;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -333,7 +334,7 @@ ul {
 
 .animacion img {
   height: auto;
-  width: 40%;
+  width: 37%;
   opacity: 1;
   transition: opacity 0s, transform 0.5s ease;
 }
