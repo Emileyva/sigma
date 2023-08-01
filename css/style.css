@@ -114,6 +114,7 @@ nav {
   width: 100%;
   padding: 25px 63px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   z-index: 100;
   transition: all 0.5s ease;
@@ -181,7 +182,6 @@ nav.active {
 
 ul {
   margin-bottom: 0px;
-  margin-top: 15px;
 }
 
 .toggle {
@@ -269,6 +269,10 @@ ul {
   background-color: #081849;
 }
 
+.venta-simple h4{
+  font-weight: bold;
+}
+
 .venta-simple-objetos{
   display: flex;
   justify-content: space-evenly;
@@ -283,12 +287,12 @@ ul {
 .venta-simple-contenedor {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 20%;
 }
 
 .venta-simple-elemento {
-  border: 3.5px solid #4d648d;
-  ;
+  border: 6px solid #4d648d;
+  margin: 10px;
 }
 
 .venta-simple-contenedor div {
@@ -298,8 +302,8 @@ ul {
   flex-direction: column;
   position: relative;
   border-radius: 10px;
-  background-color: aliceblue;
-  margin: 20px;
+  background-color: #fef9f2;
+  box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.75);
 }
 
 .venta-simple-objetos > div:not(.venta-simple-contenedor) {
@@ -334,7 +338,8 @@ ul {
 
 .animacion img {
   height: auto;
-  width: 37%;
+  width: 31%;
+  margin-left: 9px; 
   opacity: 1;
   transition: opacity 0s, transform 0.5s ease;
 }
@@ -364,14 +369,13 @@ ul {
 .venta-simple-contenedor div:hover .imagen-alternativa {
   display: inline;
   transform: scale(1.2);
-  bottom: 15px;
+  bottom: 40px;
   opacity: 1;
 }
+
 .textos-venta {
   text-align: center;
-  color: #293450;
-  font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   width: 80%;
 }
 
@@ -484,7 +488,7 @@ input[type="radio"] {
   z-index: 0;
   background-color: #31476E;
   padding-bottom: 150px;
-
+  font-family: "Montserrat";
 }
 
 .planes-objetos{
@@ -512,7 +516,7 @@ input[type="radio"] {
   align-items: center;
   box-shadow: 5px 5px 10px #000;
   position: relative;
-  color: white;
+  color: #fef9f2;
 }
 
 .plan {
@@ -532,25 +536,35 @@ input[type="radio"] {
 }
 
 .planes-objetos p{
-  font-size: 13px;
-  margin: 0 30px;
-  color: grey;
+  font-size: 16px;
+  padding: 0 40px;
+  text-align: center;
+  color: rgb(167, 255, 255);
 }
 
 
 .planes-objetos h4{
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  color: #ff9505;
+}
+
+.planes-objetos h5{
+  font-size: 35px;
+  color:#fef9f2;
+  padding: 1rem;
 }
 
 .planes-objetos ul{
   list-style: none;
+  text-align: center;
 }
 
 .planes-objetos li{
   margin: 5px 0;
   width: 100%;
-  padding: 1rem 0;
+  font-weight: bold;
+  padding: 1rem 1rem;
+  border-bottom: 2px solid hsl(240, 8%, 85%, 0.583);
 }
 
 .planes-objetos button{
@@ -561,7 +575,7 @@ input[type="radio"] {
   padding: 10px;
   border-radius: 10px;
   color: #081849;
-  border: 2px solid #4ac2e0; /* Agregamos el borde a cada imagen */
+  border: 2px solid #081849; /* Agregamos el borde a cada imagen */
   background-color: orange;
 }
 
@@ -601,7 +615,6 @@ input[type="radio"] {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-
 }
 
 @media screen and (max-width: 920px){
@@ -655,7 +668,7 @@ input[type="radio"] {
   width: 100%;
   height: 45px;
   line-height: 45px;
-  color: white;
+  color: #fef9f2;
   background-color: #1038ac;
   text-align: center;
 }
@@ -696,7 +709,7 @@ input[type="radio"] {
   margin: 4rem 0;
 }
 .contacto p {
-  color: white;
+  color: #fef9f2;
   margin: 0%;
 }
 
@@ -722,7 +735,7 @@ input[type="radio"] {
 }
 .contact-form h2 {
   font-size: 36px;
-  color: white;
+  color: #fef9f2;
   padding-top: 10px;
 }
 .contact-form .singel-form {
@@ -735,7 +748,7 @@ input[type="radio"] {
   border: none;
   background: none;
   outline: 0;
-  color: white;
+  color: #fef9f2;
   border-bottom: 1px solid #ff9505;
 }
 .contact-form .singel-form textarea {
@@ -757,7 +770,7 @@ input[type="radio"] {
   padding: 10px 40px;
   font-weight: 700;
   line-height: 30px;
-  color: white;
+  color: #fef9f2;
   position: relative;
   transition: 0.4s ease-in-out;
   background-color: #e07c09;
