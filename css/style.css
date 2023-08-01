@@ -497,10 +497,11 @@ input[type="radio"] {
   align-items: center;
   box-shadow: 5px 5px 10px #000;
   position: relative;
+  color: white;
 }
 
 .plan {
-  background-color: #ffffff;
+  background-color: #081849;
   position: relative; /* Asegura que el botón esté posicionado dentro del contenedor */
   z-index: 0;
 }
@@ -514,6 +515,41 @@ input[type="radio"] {
   transform: scale(1.25);
   z-index: 1;
 }
+
+.planes-objetos p{
+  font-size: 13px;
+  margin: 0 30px;
+  color: grey;
+}
+
+
+.planes-objetos h4{
+  display: flex;
+  justify-content: center;
+}
+
+.planes-objetos ul{
+  list-style: none;
+}
+
+.planes-objetos li{
+  margin: 5px 0;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.planes-objetos button{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  border-radius: 10px;
+  color: #081849;
+  border: 2px solid #4ac2e0; /* Agregamos el borde a cada imagen */
+  background-color: orange;
+}
+
 
 .imagenes {
   max-width: 100%;
@@ -620,7 +656,7 @@ input[type="radio"] {
 .contacto {
   display: grid;
   place-items: center;
-  margin-top: 3%;
+  margin: 4rem 0;
 }
 .contacto p {
   color: white;
