@@ -88,10 +88,12 @@ h1 {
 }
 
 h2 {
-  text-align: center;
-  color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fef9f2;
+  background-color: #fba735;
   margin-bottom: 20px;
-  margin-top: 20px;
   width: 100%;
   font-size: 45px;
   scroll-margin-top: 150px;
@@ -263,9 +265,6 @@ ul {
 }
 
 .venta-simple {
-  margin-bottom: 30px;
-  padding-bottom: 200px;
-  padding-top: 100px;
   background-color: #081849;
 }
 
@@ -381,7 +380,6 @@ ul {
 
 .funcionalidades {
   width: 100%;
-  padding: 30px 10px;
   background-color: #31476E;
   padding-bottom: 100px;  
 }
@@ -591,12 +589,9 @@ input[type="radio"] {
 }
 
 .beneficios {
-  margin-top: 50px;
   width: 100%; /* Ajustamos el ancho al 100% para ocupar todo el espacio disponible */
   background-color: #081849;  
   border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 100px; 
 }
 
 .conjunto-tarjeta {
@@ -706,7 +701,6 @@ input[type="radio"] {
 .contacto {
   display: grid;
   place-items: center;
-  margin: 4rem 0;
 }
 .contacto p {
   color: #fef9f2;
