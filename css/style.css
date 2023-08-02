@@ -666,6 +666,7 @@ input[type="radio"] {
 .tarjeta .frente img {
   position: absolute;
   width: 100%;
+  object-fit: cover;
   height: 100%;
 }
 
