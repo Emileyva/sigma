@@ -26,6 +26,7 @@ body {
 .main-section {
   position: relative;
   z-index: 1;
+  background: #31476e;
 }
 
 .image-container {
@@ -70,11 +71,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 30vh;
-    padding: 126% 0% 40% 0%;
+    padding: 120% 0% 55% 0%;
   }
   .image-container img {
     height: auto;
-    top: 13%;
+    top: 12%;
   }
 }
 
@@ -94,6 +95,12 @@ h1 {
   font-size: 45px;
   scroll-margin-top: 150px;
   font-weight: bold;
+}
+@media screen and (max-width: 920px) {
+  .titulos-naranja,
+  .titulos-blanco {
+    font-size: 32px;
+  }
 }
 
 .titulos-naranja {
@@ -333,9 +340,9 @@ ul {
     width: 100%;
   }
   .venta-simple-contenedor div {
-    padding: 20px 20px;
     width: 90%;
-    height: 35%;
+    flex-direction: column;
+    align-items: center;
   }
   .venta-simple-objetos {
     flex-direction: column;
@@ -487,6 +494,10 @@ input[type="radio"] {
   height: 30px;
   background-color: rgb(255, 255, 255);
   cursor: pointer;
+  border: none;
+  background: none;
+  color: #ff9505;
+  font-size: 30px;
 }
 
 .izquierda {
@@ -592,6 +603,24 @@ input[type="radio"] {
   border: 2px solid #ff9505; /* Agregamos el borde a cada imagen */
   background:none;
 }
+@media screen and (max-width: 920px){
+  .planes{
+    padding-bottom: 40px;
+  }
+  .planes-objetos{
+    margin-top: 40px;
+
+  }
+  .planes-objetos button {
+    position: relative;
+    bottom: 0px;
+  }
+  .plan, .plan-activo{
+    margin: 20px;
+
+  }
+
+}
 
 .imagenes {
   max-width: 100%;
@@ -606,7 +635,7 @@ input[type="radio"] {
 .beneficios {
   width: 100%; /* Ajustamos el ancho al 100% para ocupar todo el espacio disponible */
   background-color: #31476e ;
-  border-radius: 10px;
+
 }
 
 .conjunto-tarjeta {
@@ -880,6 +909,9 @@ footer div:nth-child(2)::before {
   .textos-venta {
     width: 100%;
   }
+  .venta-simple-elemento{
+    height: 30vh;
+  }
 }
 
 @media screen and (max-width: 920px) {
@@ -918,6 +950,7 @@ footer div:nth-child(2)::before {
   .beneficios {
     width: 100%;
   }
+
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -934,9 +967,8 @@ footer div:nth-child(2)::before {
     height: auto;
   }
   .plan-activo {
-    width: 73%;
-    height: 43vh;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    width: 100%;
+    height: auto;
+    transform: none;
   }
 }
