@@ -698,12 +698,15 @@ input[type="radio"] {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 @media screen and (max-width: 920px) {
   .beneficios-objetos {
     flex-direction: column;
     flex-wrap: nowrap;
+    overflow: hidden;
+
   }
 }
 
