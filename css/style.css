@@ -694,8 +694,8 @@ input[type="radio"] {
 
 .beneficios-objetos {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media screen and (max-width: 920px) {
