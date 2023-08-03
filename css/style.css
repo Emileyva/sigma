@@ -62,9 +62,6 @@ body {
     height: auto;
     top: 9%;
   }
-  body{
-    background-color: #ea00ff;
-  }
 }
 
 @media screen and (max-width: 820px) {
@@ -281,6 +278,7 @@ ul {
 
 .venta-simple {
   background-color: #fef9f2;
+  width: 100%;
 }
 
 .venta-simple h2 {
@@ -697,8 +695,8 @@ input[type="radio"] {
 
 .beneficios-objetos {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 @media screen and (max-width: 920px) {
@@ -790,6 +788,7 @@ input[type="radio"] {
   display: grid;
   place-items: center;
   background-color: #1e4877;
+  width: 100%;
 }
 .contacto p {
   color: #fef9f2;
@@ -850,6 +849,7 @@ input[type="radio"] {
   text-align: center;
   border: 1px solid #e07c09;
   padding: 10px 40px;
+  width: 100%;
   font-weight: 700;
   line-height: 30px;
   color: #fef9f2;
@@ -887,6 +887,7 @@ input[type="radio"] {
 }
 
 footer {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
