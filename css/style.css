@@ -62,6 +62,9 @@ body {
     height: auto;
     top: 9%;
   }
+  body{
+    background-color: #000;
+  }
 }
 
 @media screen and (max-width: 820px) {
