@@ -229,7 +229,7 @@ ul {
 
 .dropdown li a {
   text-decoration: none;
-  color: #1038ac;
+  color: #fba735;
   padding: 6px 15px;
   border-radius: 20px;
   margin: 0 10px;
@@ -238,7 +238,7 @@ ul {
 
 .dropdown a:hover {
   background: #1038ac;
-  color: #ff9505;
+  color: #fba735;
 }
 
 .dropdown.open {
