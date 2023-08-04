@@ -908,16 +908,6 @@ footer {
   position: relative; /* Asegúrate de que el footer tenga position: relative */
 }
 
-footer div {
-  width: 33%;
-  margin: 30px;
-}
-@media screen and (max-width: 920px){
-  footer div {
-    margin: 0px;
-  }
-}
-
 footer a {
   margin: 0 30px;
   text-decoration: none;
@@ -927,8 +917,11 @@ footer a {
 .icono {
   font-size: 30px;
 }
+.f-respon{
+ display: none;
+}
 
-footer div:nth-child(2) {
+footer div:nth-child(3) {
   position: relative; /* Asegúrate de que el div contenedor mantenga position: relative */
   font-size: 15px;
   display: flex; /* Agrega display:flex para que los elementos dentro se alineen en el eje vertical */
@@ -936,9 +929,34 @@ footer div:nth-child(2) {
   align-items: center; /* Centra el contenido verticalmente */
 }
 
-footer div:nth-child(2)::before {
+footer div:nth-child(3)::before {
   content: ""; /* Crea un pseudo-elemento para mantener el espacio */
   display: block;
+}
+
+@media screen and (max-width: 920px){
+
+  footer{
+    flex-direction: column;
+  }
+  
+  .f-normal{
+    display: none;
+  }
+  .f-respon{
+    display: none;
+    width: auto;
+    height: 20%;
+  }
+  .i-footer{
+    padding: 0% 0% 0% 0%;
+  }
+  .info-footer{
+
+  }
+  .img-footer{
+
+  }
 }
 
 /* Estilos para pantallas más pequeñas */
@@ -947,19 +965,21 @@ footer div:nth-child(2)::before {
     margin-top: 150px;
     margin-left: 20px;
   }
-
+  
   .venta-simple {
     flex-direction: column;
   }
-
+  
   .venta-simple-centro {
     display: none;
   }
-
+  
   .contacto {
     margin-top: 5%;
   }
 }
+
+
 
 /* Estilos para pantallas muy pequeñas */
 @media screen and (max-width: 480px) {
