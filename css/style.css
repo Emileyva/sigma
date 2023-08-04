@@ -208,12 +208,12 @@ ul {
 .dropdown {
   display: none;
   position: absolute;
-  right: 2rem;
+  right: 3rem;
   top: 60px;
   height: 0;
   width: 300px;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(20px);
   border-radius: 0px 0px 10px 10px;
   overflow: hidden;
   transition: height 0.7s cubic-bezier(0, 0.25, 0.38, 1);
