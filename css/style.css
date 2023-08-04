@@ -211,7 +211,7 @@ ul {
   left: 0;
   top: 90px;
   height: 0;
-  width: 100%;
+  width: 300px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   border-radius: 0px 0px 10px 10px;
@@ -229,6 +229,8 @@ ul {
   border-radius: 20px;
   margin: 0 10px;
   font-weight: 600;
+  text-decoration: none;
+
 }
 
 .dropdown a:hover {
@@ -973,7 +975,7 @@ footer div:nth-child(2)::before {
 
 @media screen and (max-width: 920px) {
   nav.active {
-    background: #c0cef7;
+    background: #081849;
     opacity: 100%;
     padding: 31px 25px;
     z-index: 100;
