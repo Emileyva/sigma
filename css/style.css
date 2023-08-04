@@ -939,14 +939,16 @@ footer div:nth-child(3)::before {
   footer{
     flex-direction: column;
   }
+  footer div{
+    margin: 4% 0% 4% 0% ;
+  }
   
   .f-normal{
     display: none;
   }
   .f-respon{
-    display: none;
+    display: block;
     width: auto;
-    height: 20%;
   }
   .i-footer{
     padding: 0% 0% 0% 0%;
@@ -955,7 +957,8 @@ footer div:nth-child(3)::before {
 
   }
   .img-footer{
-
+    max-height: 100px;
+    max-width: 60px;
   }
 }
 
