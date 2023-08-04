@@ -419,6 +419,7 @@ ul {
 }
 
 .funcionalidades {
+  display: none;
   width: 100%;
   background-color: #081849;
   padding-bottom: 100px;
