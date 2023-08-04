@@ -199,7 +199,7 @@ ul {
 }
 
 .toggle {
-  color: #1038ac;
+  color: #fef9f2;
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
@@ -208,29 +208,32 @@ ul {
 .dropdown {
   display: none;
   position: absolute;
-  left: 0;
-  top: 90px;
+  right: 2rem;
+  top: 60px;
   height: 0;
   width: 300px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   border-radius: 0px 0px 10px 10px;
   overflow: hidden;
-  transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: height 0.7s cubic-bezier(0, 0.25, 0.38, 1);
 }
 
-.dropdown a {
+.dropdown li{
   padding: 0.7rem;
   display: grid;
   align-items: center;
   justify-content: center;
   list-style: none;
+}
+
+.dropdown li a {
+  text-decoration: none;
   color: #1038ac;
+  padding: 6px 15px;
   border-radius: 20px;
   margin: 0 10px;
   font-weight: 600;
-  text-decoration: none;
-
 }
 
 .dropdown a:hover {
@@ -239,7 +242,7 @@ ul {
 }
 
 .dropdown.open {
-  height: 230px;
+  height: 270px;
 }
 
 .intro {
@@ -980,6 +983,10 @@ footer div:nth-child(2)::before {
     padding: 31px 25px;
     z-index: 100;
   }
+  nav.active i {
+    color: #ff9505;
+
+  }
   nav {
     position: fixed;
     top: 0;
@@ -992,6 +999,9 @@ footer div:nth-child(2)::before {
     transition: all 0.5s ease;
     padding-left: none;
     background-color: #ff9505;
+  }
+  nav i{
+    color: #31476e;
   }
   .navegacion a {
     display: none;
