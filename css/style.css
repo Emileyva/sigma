@@ -250,8 +250,8 @@ ul {
 }
 
 .introduccion {
-  margin-left: 1240px;
-  margin-top: 450px;
+  margin-left: 50vw;
+  margin-top: 50vh;
   display: flex;
   flex-direction: column;
   font-size: 60px;
