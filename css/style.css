@@ -766,9 +766,9 @@ input[type="radio"] {
 
 .tarjeta .atras {
   transform: perspective(600px) rotateY(180deg);
-  background-color: #1038ac;
+  background-color: #081849;
   padding: 15px;
-  color: #25d366;
+  color: #fef9f2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -830,11 +830,11 @@ input[type="radio"] {
   color: #fef9f2;
   padding-top: 10px;
 }
-.contact-form .singel-form {
+.contact-form .single-form {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.contact-form .singel-form input {
+.contact-form .single-form input {
   width: 100%;
   padding: 0.7em;
   border: none;
@@ -843,7 +843,7 @@ input[type="radio"] {
   color: #fef9f2;
   border-bottom: 1px solid #ff9505;
 }
-.contact-form .singel-form textarea {
+.contact-form .single-form textarea {
   width: 100%;
   padding: 0 20px;
   border: 1px solid #a1a1a1;
@@ -908,6 +908,11 @@ footer {
   position: relative; /* Asegúrate de que el footer tenga position: relative */
 }
 
+.img-footer{
+  max-width: 45%;
+  height: 100%;
+}
+
 footer a {
   margin: 0 30px;
   text-decoration: none;
@@ -952,9 +957,6 @@ footer div:nth-child(3)::before {
   }
   .i-footer{
     padding: 0% 0% 0% 0%;
-  }
-  .info-footer{
-
   }
   .img-footer{
     max-height: 100px;
