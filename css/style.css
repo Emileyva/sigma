@@ -931,14 +931,15 @@ footer a {
 footer div:nth-child(3) {
   position: relative; /* Asegúrate de que el div contenedor mantenga position: relative */
   font-size: 15px;
-  display: flex; /* Agrega display:flex para que los elementos dentro se alineen en el eje vertical */
-  flex-direction: column;
-  align-items: center; /* Centra el contenido verticalmente */
 }
 
 footer div:nth-child(3)::before {
   content: ""; /* Crea un pseudo-elemento para mantener el espacio */
   display: block;
+}
+
+.info-footer{
+  justify-content: center;
 }
 
 @media screen and (max-width: 920px){
