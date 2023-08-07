@@ -374,47 +374,6 @@ ul {
     margin-bottom: 0px;
   }
 }
-/* 
-.animacion {
-  position: relative;
-}
-
-.animacion img {
-  height: auto;
-  width: 31%;
-  margin-left: 9px; 
-  opacity: 1;
-  transition: opacity 0s, transform 0.5s ease;
-}
-
-@media screen and (max-width: 920px) {
-  .animacion img {
-    width: 10%;
-  }
-}
-@media screen and (max-width: 820px) {
-  .animacion img {
-    width: 30%;
-  }
-}
-
-.imagen-alternativa {
-  position: absolute;
-  display: none;
-  opacity: 0;
-  transition: opacity 0.5s ease, transform 1.5s ease;
-}
-
-.venta-simple-contenedor div:hover img {
-  opacity: 0;
-}
-
-.venta-simple-contenedor div:hover .imagen-alternativa {
-  display: inline;
-  transform: scale(1.2);
-  bottom: 40px;
-  opacity: 1;
-} */
 
 .textos-venta {
   text-align: center;
@@ -422,6 +381,13 @@ ul {
   margin-top: 60px;
   width: 80%;
   color: #31476e;;
+}
+
+@media (max-width: 1430px) {
+  .textos-venta {
+      font-size: 18px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+      width: 100%;
+  }
 }
 
 .funcionalidades {
@@ -945,12 +911,10 @@ footer {
 }
 
 .img-footer{
-  max-width: 35%;
+  max-width: 23%;
   height: 100%;
 }
-.img-footer img{
-  width: 80%;
-}
+
 footer a {
   margin: 0 20px;
   text-decoration: none;
@@ -966,7 +930,7 @@ footer a {
 
 footer div:nth-child(3) {
   position: relative; /* Asegúrate de que el div contenedor mantenga position: relative */
-  font-size: 15px;
+  font-size: 17px;
 }
 
 footer div:nth-child(3)::before {
