@@ -961,6 +961,12 @@ footer div:nth-child(3)::before {
   .i-footer{
     padding: 0% 0% 0% 0%;
   }
+
+  .info-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .img-footer{
     max-height: 100px;
     max-width: 60px;
