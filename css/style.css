@@ -81,9 +81,9 @@ body {
 }
 
 h1 {
-  color: rgb(74, 99, 245);
+  color: #ff9505;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 55px;
 }
 
 .titulos-naranja,
@@ -250,8 +250,8 @@ ul {
 }
 
 .introduccion {
-  margin-left: 750px;
-  margin-top: 250px;
+  margin-left: 1240px;
+  margin-top: 450px;
   display: flex;
   flex-direction: column;
   font-size: 60px;
@@ -260,9 +260,9 @@ ul {
 .textos {
   display: flex;
   color: rgb(255, 255, 255);
-  max-width: 500px;
+  max-width: 700px;
   font-family: "Montserrat", sans-serif;
-  font-size: 21px;
+  font-size: 23px;
 }
 @media screen and (max-width: 920px) {
   .textos {
@@ -418,7 +418,7 @@ ul {
 
 .textos-venta {
   text-align: center;
-  font-size: 18px;
+  font-size: 21px;
   margin-top: 60px;
   width: 80%;
   color: #31476e;;
@@ -427,14 +427,18 @@ ul {
 .funcionalidades {
   width: 100%;
   background-color: #081849;
-  padding-bottom: 100px;
+}
+
+.funcionalidades h2{
+  margin-top: 35px;
 }
 
 .slider-objetos {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%; /* Asegurarse de que ocupe todo el espacio disponible */
+  height: 86vh; /* Asegurarse de que ocupe todo el espacio disponible */
+  margin-top: -66px;
 }
 
 input[type="radio"] {
@@ -595,7 +599,7 @@ input[type="radio"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 5px 5px 10px #000;
+  box-shadow: 1px 1px 7px #000;
   position: relative;
 }
 
@@ -627,6 +631,15 @@ input[type="radio"] {
 .planes-objetos h5 {
   font-size: 35px;
   padding: 1rem;
+}
+
+.precio-grande {
+  font-size: 30px; /* Ajusta el tamaño de fuente según tu preferencia */
+}
+
+/* Estilos para "/mes" más pequeño */
+.mes-pequeno {
+  font-size: 14px; /* Ajusta el tamaño de fuente según tu preferencia */
 }
 
 .planes-objetos ul {
@@ -759,9 +772,9 @@ input[type="radio"] {
   bottom: 0;
   width: 100%;
   height: 45px;
+  font-size: 25px;
   line-height: 45px;
   color: #fef9f2;
-  background-color: #081849;
   text-align: center;
 }
 
@@ -806,11 +819,21 @@ input[type="radio"] {
   margin: 0%;
 }
 
+.contacto ::placeholder{
+  color: grey;
+}
+
+.contacto h2{
+  margin-top: 40px;
+}
+
 .contact-form {
   background-color: #1e4877;
   border-radius: 10px;
   padding: 48px 40px;
   margin-bottom: 15px;
+  margin-top: 50px;
+  height: 53vh;
 }
 .contact-form h5 {
   position: relative;
@@ -908,13 +931,16 @@ footer {
   font-size: 20px;
   padding: 10px;
   position: relative; /* Asegúrate de que el footer tenga position: relative */
+
 }
 
 .img-footer{
   max-width: 35%;
   height: 100%;
 }
-
+.img-footer img{
+  width: 80%;
+}
 footer a {
   margin: 0 20px;
   text-decoration: none;
