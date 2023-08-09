@@ -537,7 +537,7 @@ input[type="radio"] {
 }
 
 .planes h2 {
-  background-color: #ff9505;
+  background-color: #1e4877;
 }
 
 .planes-objetos {
@@ -659,8 +659,12 @@ input[type="radio"] {
 
 .beneficios {
   width: 100%; /* Ajustamos el ancho al 100% para ocupar todo el espacio disponible */
-  background-color: #31476e ;
+  background-color: #fef9f2 ;
 
+}
+
+.beneficios h2{
+  background-color: #ff9505;
 }
 
 .conjunto-tarjeta {
