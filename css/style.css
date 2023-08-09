@@ -212,7 +212,7 @@ ul {
   top: 60px;
   height: 0;
   width: 300px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(8, 24, 73, 0.4);
   backdrop-filter: blur(20px);
   border-radius: 0px 0px 10px 10px;
   overflow: hidden;
@@ -989,7 +989,7 @@ footer div:nth-child(3)::before {
       transform: translateX(11%);
       width: 82%;
   }
-  
+
   .contacto {
     margin-top: 5%;
   }
@@ -1007,10 +1007,7 @@ footer div:nth-child(3)::before {
   .textos-venta {
     width: 100%;
   }
-  .venta-simple-elemento{
-    height: 35vh;
-  }
-}
+
 
 @media screen and (max-width: 920px) {
   nav.active {
@@ -1055,7 +1052,7 @@ footer div:nth-child(3)::before {
   .beneficios {
     width: 100%;
   }
-
+}
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
