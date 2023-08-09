@@ -667,6 +667,7 @@ input[type="radio"] {
 
 .conjunto-tarjeta {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   width: 100%;
 }
@@ -759,7 +760,7 @@ input[type="radio"] {
   color: #fef9f2;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: center;
 }
 
@@ -1004,7 +1005,7 @@ footer div:nth-child(3)::before {
     width: 100%;
   }
   .venta-simple-elemento{
-    height: 30vh;
+    height: 35vh;
   }
 }
 
