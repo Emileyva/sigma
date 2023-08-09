@@ -244,6 +244,9 @@ ul {
 .dropdown.open {
   height: 270px;
 }
+.dropdown.closed{
+  height: 0px;
+}
 
 .intro {
   display: flex;
