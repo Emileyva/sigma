@@ -212,7 +212,7 @@ ul {
   top: 60px;
   height: 0;
   width: 300px;
-  background: rgba(8, 24, 73, 0.4);
+  background: rgba(8, 24, 73, 0.6);
   backdrop-filter: blur(20px);
   border-radius: 0px 0px 10px 10px;
   overflow: hidden;
@@ -234,11 +234,6 @@ ul {
   border-radius: 20px;
   margin: 0 10px;
   font-weight: 600;
-}
-
-.dropdown a:hover {
-  background: #1038ac;
-  color: #fba735;
 }
 
 .dropdown.open {
