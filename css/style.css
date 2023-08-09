@@ -94,7 +94,7 @@ h1 {
   justify-content: center;
   width: 100%;
   font-size: 45px;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 90px;
   font-weight: bold;
 }
 @media screen and (max-width: 920px) {
@@ -1031,10 +1031,9 @@ footer div:nth-child(3)::before {
     z-index: 100;
     transition: all 0.5s ease;
     padding-left: none;
-    background-color: #ff9505;
   }
   nav i{
-    color: #31476e;
+    color: #ff9505;
   }
   .navegacion a {
     display: none;
