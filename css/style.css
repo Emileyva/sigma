@@ -303,6 +303,7 @@ ul {
 
 .venta-simple-objetos {
   display: flex;
+  margin-bottom: 30px;
   flex-direction: column;
 }
 
@@ -330,7 +331,7 @@ ul {
   border: 6px solid #4d648d;
   margin: 10px;
   align-items: center;
-  height: 35vh;
+  height: 100%;
   width: 25%;
   display: flex;
   flex-direction: column;
@@ -382,8 +383,9 @@ ul {
 
 .textos-venta {
   text-align: center;
+  margin-bottom: 40px;
+  margin-top: 16px;
   font-size: 21px;
-  margin-top: 60px;
   width: 80%;
   color: #31476e;;
 }
