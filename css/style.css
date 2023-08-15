@@ -78,7 +78,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 30vh;
-    padding: 120% 0% 55% 0%;
+    padding: 120% 0% 40% 0%;
   }
   .image-container img {
     height: auto;
@@ -539,7 +539,7 @@ input[type="radio"] {
 }
 
 .planes h2 {
-  background-color: #1e4877;
+  background-color: #081849;
 }
 
 .planes-objetos {
@@ -610,7 +610,7 @@ input[type="radio"] {
 .planes-objetos ul {
   list-style: none;
   text-align: center;
-  padding: 0;
+  padding: 10px;
 }
 
 .planes-objetos li {
@@ -619,15 +619,6 @@ input[type="radio"] {
   font-weight: bold;
   padding: 1rem 1rem;
   border-bottom: 2px solid hsl(240, 8%, 85%, 0.583);
-}
-
-.planes-objetos button {
-  padding: 10px;
-  border-radius: 10px;
-  color: #ff9505;
-  border: 2px solid #ff9505; /* Agregamos el borde a cada imagen */
-  background: none;
-  margin-top: 5%;
 }
 
 @media screen and (max-width: 920px) {
@@ -1016,6 +1007,7 @@ footer div:nth-child(3)::before {
       width: 100%;
       padding: 30px 30px;
       display: flex;
+      backdrop-filter: blur(200px);
       flex-wrap: wrap;
       z-index: 100;
       transition: all 0.5s ease;
