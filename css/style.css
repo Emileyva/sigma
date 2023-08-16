@@ -51,6 +51,7 @@ body {
 }
 
 @media screen and (max-width: 920px) {
+
   .image-container {
     position: relative;
     display: flex;
@@ -106,7 +107,7 @@ h1 {
 @media screen and (max-width: 920px) {
   .titulos-naranja,
   .titulos-blanco {
-    font-size: 32px;
+    font-size: 30px;
   }
 }
 
