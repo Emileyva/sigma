@@ -83,7 +83,7 @@ body {
   }
   .image-container img {
     height: auto;
-    top: 12%;
+    top: 14%;
   }
 }
 
@@ -101,7 +101,7 @@ h1 {
   justify-content: center;
   width: 100%;
   font-size: 45px;
-  scroll-margin-top: 90px;
+  scroll-margin-top: 105px;
   font-weight: bold;
 }
 @media screen and (max-width: 920px) {
@@ -216,7 +216,7 @@ ul {
   display: none;
   position: absolute;
   right: 0rem;
-  top: 90px;
+  top: 81px;
   height: 0;
   width: 100%;
   background: rgba(8, 24, 73, 0.6);
@@ -734,6 +734,7 @@ input[type="radio"] {
 }
 
 .tarjeta .frente p {
+  display: none;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -741,6 +742,13 @@ input[type="radio"] {
   line-height: 0px;
   color: #adadad;
   text-align: center;
+
+
+}
+@media screen and (max-width: 920px) {
+  .tarjeta .frente p {
+    display: block;
+  }
 }
 
 .tarjeta .atras {
@@ -1008,7 +1016,6 @@ footer div:nth-child(3)::before {
       width: 100%;
       padding: 30px 30px;
       display: flex;
-      backdrop-filter: blur(200px);
       flex-wrap: wrap;
       z-index: 100;
       transition: all 0.5s ease;
