@@ -16,6 +16,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="script/app.js"></script>
     <meta
       name="description"
       content=""
@@ -30,7 +31,7 @@
 
   <body>
     <!--PAGINA PRINCIPAL-->
-    <div class="main-section">
+    <div class="main-section hidden">
       <div class="content-container">
         <header id="intro">
           <!-- ... (contenido del menú) ... -->
@@ -62,8 +63,8 @@
           <div class="introduccion">
             <!-- ... (contenido de la introducción) ... -->
             <h1>
-              SI LA VENTA ES SIMPLE <br />
-              EL ÉXITO ES ASEGURADO
+              Si la venta es simple <br />
+              el éxito es asegurado
             </h1>
             <p class="textos">
               Con VentaSimple, simplifica tu día a día y lleva tu negocio al
@@ -76,17 +77,17 @@
       </div>
     </div>
     <!--INICIO ELEMENTOS-->
-    <section class="venta-simple">
-      <h2 class="titulos-blanco" id="venta-simple">¿QUÉ ES VENTA SIMPLE?</h2>
+    <section class="venta-simple hidden">
+      <h2 class="titulos-blanco" id="venta-simple">¿Qué es VentaSimple?</h2>
       <div class="venta-simple-objetos">
         <img
           src="media/punto de venta 1.png"
           alt="IMAGEN VENTA SIMPLE"
-          class="venta-simple-centro"
+          class="venta-simple-centro hidden"
         />
         <div class="venta-simple-contenedor">
           <div class="venta-simple-par">
-            <div class="venta-simple-elemento">
+            <div class="venta-simple-elemento hidden">
               <h4>PUNTO DE VENTA</h4>
               <p class="textos-venta">
                 Agiliza tus ventas con una interfaz intuitiva y simplificada.
@@ -94,7 +95,7 @@
                 de productos hasta descuentos y métodos de pago.
               </p>
             </div>
-            <div class="venta-simple-elemento">
+            <div class="venta-simple-elemento hidden">
               <h4>INTEGRACIÓN</h4>
               <p class="textos-venta">
                 Venta Simple se integra perfectamente con lectores de código de
@@ -104,7 +105,7 @@
             </div>
           </div>
           <div class="venta-simple-par">
-            <div class="venta-simple-elemento">
+            <div class="venta-simple-elemento hidden">
               <h4>GESTIÓN COMERCIAL</h4>
               <p class="textos-venta">
                 Administra tu stock de forma eficiente, realiza seguimiento de 
@@ -112,7 +113,7 @@
                 imprimí tickets de góndola o código de barras y mucho más! 
               </p>
             </div>
-            <div class="venta-simple-elemento">
+            <div class="venta-simple-elemento hidden">
               <h4>PERSONALIZACIÓN</h4>
               <p class="textos-venta">
                 Adapta la plataforma a tu imagen de marca y a las necesidades 
@@ -125,8 +126,8 @@
       </div>
     </section>
     <!--SLIDER-->
-    <section class="funcionalidades">
-      <h2 class="titulos-blanco" id="slider">FUNCIONALIDADES</h2>
+    <section class="funcionalidades hidden">
+      <h2 class="titulos-blanco" id="slider">Funcionalidades</h2>
       <div class="slider-objetos">
         <div class="contenedor-slider">
           <input type="radio" id="item-1" name="position" checked />
@@ -177,12 +178,12 @@
       S
     </section>
     <!--TARJETAS-->
-    <section class="beneficios">
-      <h2 id="clientes" class="titulos-blanco">¿POR QUÉ ELEGIRNOS?</h2>
+    <section class="beneficios hidden">
+      <h2 id="clientes" class="titulos-blanco hidden">¿Por qué elegirnos?</h2>
       <!-- ... (contenido de beneficios) ... -->
       <div class="beneficios-objetos">
         <div class="conjunto-tarjeta">
-          <div class="tarjeta">
+          <div class="tarjeta hidden">
             <div class="cara frente">
               <img src="media/tarjetas/INSTALACION.png" alt="ALTERNATIVO" />          
               <h3>Instalación rápida <br>y sencilla</h3>
@@ -199,7 +200,7 @@
               </p>
             </div>
           </div>
-          <div class="tarjeta">
+          <div class="tarjeta hidden">
             <div class="cara frente">
               <img src="media/tarjetas/CAPACITACION.png" alt="ALTERNATIVO" />          
               <h3>Capacitación</h3>
@@ -216,7 +217,7 @@
               </p>
             </div>
           </div>
-          <div class="tarjeta">
+          <div class="tarjeta hidden">
             <div class="cara frente">
               <img
                 src="media/tarjetas/SERVICIO TECNICO.png"
@@ -238,7 +239,7 @@
           </div>
         </div>
         <div class="conjunto-tarjeta">
-          <div class="tarjeta">
+          <div class="tarjeta hidden">
             <div class="cara frente">
               <img src="media/tarjetas/PUESTA EN MARCHA.png" alt="ALTERNATIVO"/>  
               <h3>Puesta en marcha</h3>
@@ -254,7 +255,7 @@
               </p>
             </div>
           </div>
-          <div class="tarjeta">
+          <div class="tarjeta hidden">
             <div class="cara frente">
               <img src="media/tarjetas/MODO OFFLINE.png" alt="ALTERNATIVO" />
               <h3>Modo offline</h3>
@@ -269,7 +270,7 @@
               </p>
             </div>
           </div>
-          <div class="tarjeta">
+          <div class="tarjeta hidden">
             <div class="cara frente">
               <img src="media/tarjetas/ACTUALIZACION.png" alt="ALTERNATIVO" />
               <h3>Actualizaciones periódicas</h3>
@@ -289,11 +290,11 @@
     </section>
 
     <!--PLANES-->
-    <section class="planes">
+    <section class="planes hidden">
       <h2 class="titulos-blanco" id="planes">NUESTROS PLANES</h2>
       <!-- ... (contenido de funcionalidades) ... -->
       <div class="planes-objetos">
-        <div class="plan">
+        <div class="plan hidden">
           <h4>Plan <br />Profesional</h4>
           <h5>
             <span class="precio-grande">$9000</span><span class="mes-pequeno">/mes</span>
@@ -316,7 +317,7 @@
             ><button class="main-btn">Contáctanos</button></a
           >
         </div>
-        <div class="plan-activo">
+        <div class="plan-activo hidden">
           <h4>
             Plan <br />
             Inicial
@@ -340,7 +341,7 @@
             ><button class="main-btn">Contáctanos</button></a
           >
         </div>
-        <div class="plan">
+        <div class="plan hidden">
           <h4>Plan <br />Reporting</h4>
           <h5>
             <span class="precio-grande">$6000</span><span class="mes-pequeno">/mes</span>
@@ -364,7 +365,7 @@
       </div>
     </section>
     <!-- FORMULARIO -->
-    <section class="contacto">
+    <section class="contacto hidden">
       <h2 class="titulos-naranja" id="formulario">CONTÁCTANOS</h2>
       <div class="container">
         <div class="row">

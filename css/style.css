@@ -9,6 +9,17 @@
   touch-action: manipulation;
 }
 
+.hidden{
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
 body,
 html {
   height: 100%;
@@ -91,7 +102,8 @@ body {
 h1 {
   color: #ff9505;
   font-weight: bold;
-  font-size: 55px;
+  font-size: 50px;
+  font-family: "Montserrat ExtraBold";
 }
 
 .titulos-naranja,
@@ -103,7 +115,7 @@ h1 {
   width: 100%;
   font-size: 45px;
   scroll-margin-top: 105px;
-  font-weight: bold;
+  font-family: "Montserrat ExtraBold";
 }
 @media screen and (max-width: 920px) {
   .titulos-naranja,
